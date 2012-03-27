@@ -15,7 +15,55 @@
 		351DAFBC15126FFB004CC497 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 351DAFBB15126FFB004CC497 /* main.m */; };
 		351DAFC015126FFB004CC497 /* ILAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 351DAFBF15126FFB004CC497 /* ILAppDelegate.m */; };
 		351DAFC315126FFB004CC497 /* iOSLibs.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 351DAFC115126FFB004CC497 /* iOSLibs.xcdatamodeld */; };
+		351DAFCC15127021004CC497 /* ILEpisodesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 351DAFCA15127021004CC497 /* ILEpisodesViewController.m */; };
+		351DAFCD15127021004CC497 /* ILEpisodesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 351DAFCB15127021004CC497 /* ILEpisodesViewController.xib */; };
+		35BB25AA1517DA0D00E7518F /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BB25A11517D99200E7518F /* libRestKit.a */; };
+		35BB25B01517DA4C00E7518F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BB25AB1517DA4C00E7518F /* CFNetwork.framework */; };
+		35BB25B11517DA4C00E7518F /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BB25AC1517DA4C00E7518F /* libxml2.dylib */; };
+		35BB25B21517DA4C00E7518F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BB25AD1517DA4C00E7518F /* MobileCoreServices.framework */; };
+		35BB25B31517DA4C00E7518F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BB25AE1517DA4C00E7518F /* QuartzCore.framework */; };
+		35BB25B41517DA4C00E7518F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BB25AF1517DA4C00E7518F /* Security.framework */; };
+		35BB25B61517DA8C00E7518F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BB25B51517DA8C00E7518F /* SystemConfiguration.framework */; };
+		35BB25C51517DC6300E7518F /* Episode.m in Sources */ = {isa = PBXBuildFile; fileRef = 35BB25C41517DC6200E7518F /* Episode.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		35BB25A01517D99200E7518F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35BB25961517D99100E7518F /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D1614564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+		35BB25A21517D99200E7518F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35BB25961517D99100E7518F /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D2614564E820060A5C5;
+			remoteInfo = RestKitTests;
+		};
+		35BB25A41517D99200E7518F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35BB25961517D99100E7518F /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E62145651060060A5C5;
+			remoteInfo = RestKitFramework;
+		};
+		35BB25A61517D99200E7518F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35BB25961517D99100E7518F /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E78145651060060A5C5;
+			remoteInfo = RestKitFrameworkTests;
+		};
+		35BB25A81517D9FA00E7518F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 35BB25961517D99100E7518F /* RestKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 25160D1514564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		351DAFA915126FFB004CC497 /* iOSLibs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSLibs.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -23,13 +71,25 @@
 		351DAFAF15126FFB004CC497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		351DAFB115126FFB004CC497 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		351DAFB315126FFB004CC497 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		351DAFB715126FFB004CC497 /* iOSLibs-Info.plist */ = {isa = PBXFileReference; path = "iOSLibs-Info.plist"; sourceTree = "<group>"; };
+		351DAFB715126FFB004CC497 /* iOSLibs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOSLibs-Info.plist"; sourceTree = "<group>"; };
 		351DAFB915126FFB004CC497 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		351DAFBB15126FFB004CC497 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		351DAFBD15126FFB004CC497 /* iOSLibs-Prefix.pch */ = {isa = PBXFileReference; path = "iOSLibs-Prefix.pch"; sourceTree = "<group>"; };
-		351DAFBE15126FFB004CC497 /* ILAppDelegate.h */ = {isa = PBXFileReference; path = ILAppDelegate.h; sourceTree = "<group>"; };
+		351DAFBD15126FFB004CC497 /* iOSLibs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSLibs-Prefix.pch"; sourceTree = "<group>"; };
+		351DAFBE15126FFB004CC497 /* ILAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ILAppDelegate.h; sourceTree = "<group>"; };
 		351DAFBF15126FFB004CC497 /* ILAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ILAppDelegate.m; sourceTree = "<group>"; };
 		351DAFC215126FFB004CC497 /* iOSLibs.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOSLibs.xcdatamodel; sourceTree = "<group>"; };
+		351DAFC915127021004CC497 /* ILEpisodesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILEpisodesViewController.h; sourceTree = "<group>"; };
+		351DAFCA15127021004CC497 /* ILEpisodesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILEpisodesViewController.m; sourceTree = "<group>"; };
+		351DAFCB15127021004CC497 /* ILEpisodesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ILEpisodesViewController.xib; sourceTree = "<group>"; };
+		35BB25961517D99100E7518F /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = RestKit/RestKit.xcodeproj; sourceTree = "<group>"; };
+		35BB25AB1517DA4C00E7518F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		35BB25AC1517DA4C00E7518F /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		35BB25AD1517DA4C00E7518F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		35BB25AE1517DA4C00E7518F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		35BB25AF1517DA4C00E7518F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		35BB25B51517DA8C00E7518F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		35BB25C31517DC6200E7518F /* Episode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Episode.h; sourceTree = "<group>"; };
+		35BB25C41517DC6200E7518F /* Episode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Episode.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,10 +97,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35BB25B61517DA8C00E7518F /* SystemConfiguration.framework in Frameworks */,
+				35BB25B01517DA4C00E7518F /* CFNetwork.framework in Frameworks */,
+				35BB25B11517DA4C00E7518F /* libxml2.dylib in Frameworks */,
+				35BB25B21517DA4C00E7518F /* MobileCoreServices.framework in Frameworks */,
+				35BB25B31517DA4C00E7518F /* QuartzCore.framework in Frameworks */,
+				35BB25B41517DA4C00E7518F /* Security.framework in Frameworks */,
+				351DAFB415126FFB004CC497 /* CoreData.framework in Frameworks */,
+				35BB25AA1517DA0D00E7518F /* libRestKit.a in Frameworks */,
 				351DAFAE15126FFB004CC497 /* UIKit.framework in Frameworks */,
 				351DAFB015126FFB004CC497 /* Foundation.framework in Frameworks */,
 				351DAFB215126FFB004CC497 /* CoreGraphics.framework in Frameworks */,
-				351DAFB415126FFB004CC497 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +117,7 @@
 		351DAF9E15126FFB004CC497 = {
 			isa = PBXGroup;
 			children = (
+				35BB25961517D99100E7518F /* RestKit.xcodeproj */,
 				351DAFB515126FFB004CC497 /* iOSLibs */,
 				351DAFAC15126FFB004CC497 /* Frameworks */,
 				351DAFAA15126FFB004CC497 /* Products */,
@@ -67,6 +135,12 @@
 		351DAFAC15126FFB004CC497 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				35BB25B51517DA8C00E7518F /* SystemConfiguration.framework */,
+				35BB25AB1517DA4C00E7518F /* CFNetwork.framework */,
+				35BB25AC1517DA4C00E7518F /* libxml2.dylib */,
+				35BB25AD1517DA4C00E7518F /* MobileCoreServices.framework */,
+				35BB25AE1517DA4C00E7518F /* QuartzCore.framework */,
+				35BB25AF1517DA4C00E7518F /* Security.framework */,
 				351DAFAD15126FFB004CC497 /* UIKit.framework */,
 				351DAFAF15126FFB004CC497 /* Foundation.framework */,
 				351DAFB115126FFB004CC497 /* CoreGraphics.framework */,
@@ -78,6 +152,11 @@
 		351DAFB515126FFB004CC497 /* iOSLibs */ = {
 			isa = PBXGroup;
 			children = (
+				35BB25C31517DC6200E7518F /* Episode.h */,
+				35BB25C41517DC6200E7518F /* Episode.m */,
+				351DAFC915127021004CC497 /* ILEpisodesViewController.h */,
+				351DAFCA15127021004CC497 /* ILEpisodesViewController.m */,
+				351DAFCB15127021004CC497 /* ILEpisodesViewController.xib */,
 				351DAFBE15126FFB004CC497 /* ILAppDelegate.h */,
 				351DAFBF15126FFB004CC497 /* ILAppDelegate.m */,
 				351DAFC115126FFB004CC497 /* iOSLibs.xcdatamodeld */,
@@ -97,6 +176,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		35BB25971517D99100E7518F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35BB25A11517D99200E7518F /* libRestKit.a */,
+				35BB25A31517D99200E7518F /* RestKitTests.octest */,
+				35BB25A51517D99200E7518F /* RestKit.framework */,
+				35BB25A71517D99200E7518F /* RestKitFrameworkTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -111,6 +201,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				35BB25A91517D9FA00E7518F /* PBXTargetDependency */,
 			);
 			name = iOSLibs;
 			productName = iOSLibs;
@@ -136,6 +227,12 @@
 			mainGroup = 351DAF9E15126FFB004CC497;
 			productRefGroup = 351DAFAA15126FFB004CC497 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 35BB25971517D99100E7518F /* Products */;
+					ProjectRef = 35BB25961517D99100E7518F /* RestKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				351DAFA815126FFB004CC497 /* iOSLibs */,
@@ -143,12 +240,44 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		35BB25A11517D99200E7518F /* libRestKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestKit.a;
+			remoteRef = 35BB25A01517D99200E7518F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35BB25A31517D99200E7518F /* RestKitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitTests.octest;
+			remoteRef = 35BB25A21517D99200E7518F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35BB25A51517D99200E7518F /* RestKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RestKit.framework;
+			remoteRef = 35BB25A41517D99200E7518F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		35BB25A71517D99200E7518F /* RestKitFrameworkTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitFrameworkTests.octest;
+			remoteRef = 35BB25A61517D99200E7518F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		351DAFA715126FFB004CC497 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				351DAFBA15126FFB004CC497 /* InfoPlist.strings in Resources */,
+				351DAFCD15127021004CC497 /* ILEpisodesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,10 +291,20 @@
 				351DAFBC15126FFB004CC497 /* main.m in Sources */,
 				351DAFC015126FFB004CC497 /* ILAppDelegate.m in Sources */,
 				351DAFC315126FFB004CC497 /* iOSLibs.xcdatamodeld in Sources */,
+				351DAFCC15127021004CC497 /* ILEpisodesViewController.m in Sources */,
+				35BB25C51517DC6300E7518F /* Episode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		35BB25A91517D9FA00E7518F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RestKit;
+			targetProxy = 35BB25A81517D9FA00E7518F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		351DAFB815126FFB004CC497 /* InfoPlist.strings */ = {
@@ -198,6 +337,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/RestKit/Build";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 			};
@@ -215,6 +355,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SOURCE_ROOT)/RestKit/Build";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
@@ -228,6 +369,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOSLibs/iOSLibs-Prefix.pch";
 				INFOPLIST_FILE = "iOSLibs/iOSLibs-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -239,6 +384,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOSLibs/iOSLibs-Prefix.pch";
 				INFOPLIST_FILE = "iOSLibs/iOSLibs-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -263,6 +412,7 @@
 				351DAFC815126FFB004CC497 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
